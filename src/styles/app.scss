@@ -1,0 +1,48 @@
+@import './libs/normalize';
+@import './mixins/fontsize';
+@import './mixins/media';
+
+@import "components/singlegoods";
+@import "components/UI/carousel";
+@import "components/UI/info";
+@import "components/UI/params";
+@import "components/UI/question";
+@import "components/UI/btn";
+@import "components/UI/description";
+
+body {
+  background-color: #FFF;
+}
+
+.wrapper {
+  background-color: #FFF;
+}
+
+.container {
+  background-color: #f8f8f8;
+  padding: 0 15px;
+  width: 1440px;
+  margin: 50px auto;
+}
+@include _1024 {
+  .container {
+    padding: 0 10px;
+    width: 769px;
+    margin: 20px auto;
+  }
+}
+@include _768 {
+  .container {
+    padding: 15px;
+    width: 100%;
+    margin: 5px auto;
+  }
+}
+@include _425 {
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+

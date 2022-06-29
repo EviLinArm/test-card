@@ -1,0 +1,29 @@
+.sgoods {
+  &__container {
+    margin-bottom: 35px;
+    display: grid;
+    gap: 60px 40px;
+    grid-template-columns: minmax(0,1fr) minmax(0,2fr) minmax(0,1fr);
+  }
+  @include _1024 {
+    &__container {
+      margin-bottom: 25px;
+      gap: 45px 15px;
+      grid-template-columns: minmax(0,1fr) minmax(0,2fr);
+    }
+  }
+  @include _768 {
+    &__container {
+      margin-bottom: 20px;
+      gap: 35px 12px;
+      grid-template-columns: minmax(0,1fr);
+    }
+  }
+  @include _425 {
+    &__container {
+      margin-bottom: 15px;
+      gap: 30px 10px;
+      grid-template-columns: minmax(0,1fr);
+    }
+  }
+}

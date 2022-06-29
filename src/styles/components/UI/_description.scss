@@ -1,0 +1,8 @@
+.description {
+  &__title {
+    @include title-margin;
+  }
+  &__text {
+    white-space: break-spaces;
+  }
+}

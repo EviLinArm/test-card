@@ -1,0 +1,29 @@
+.params {
+  &__title {
+    @include title-margin;
+  }
+  &__table {
+    &__data {
+      display: flex;
+      justify-content: space-between;
+      .data {
+        &__elem {
+          width: 50%;
+          border: 2px solid black;
+          padding: 5px 5px 5px 10px;
+          &:last-child {
+            border-left: unset;
+            border-bottom: unset;
+          }
+          &:first-child {
+            border-bottom: unset;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+
+}
